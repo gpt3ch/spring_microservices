@@ -2,14 +2,14 @@ package com.example.moviecatalogservice.models;
 
 public class Rating {
     private String movieId;
-    private int rating;
+    private Double rating;
 
-    public Rating() {
-    }
-
-    public Rating(String movieId, int rating) {
+    public Rating(String movieId, Double rating) {
         this.movieId = movieId;
         this.rating = rating;
+    }
+
+    public Rating() {
     }
 
     public String getMovieId() {
@@ -20,11 +20,11 @@ public class Rating {
         this.movieId = movieId;
     }
 
-    public int getRating() {
+    public Double getRating() {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(Double rating) {
         this.rating = rating;
     }
 }
